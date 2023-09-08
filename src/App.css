@@ -1,0 +1,19 @@
+
+/* main area. height is whole viewport and width is whole width */
+.app {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(119, 246, 255);
+}
+
+/* height of content set here */
+.content {
+    width: 100%;
+    height: 85%;
+}
+
+/* height of navbar set here */
+.navigation {
+    width: 100%;
+    height: 15%;
+}

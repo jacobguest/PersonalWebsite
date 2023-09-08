@@ -1,0 +1,14 @@
+/* navbar size can be configured to be different sizes by using a div to encompass the component */
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 241, 254);
+}
+
+.navbar-item {
+    margin: 1%;
+    font-size: x-large;
+}
