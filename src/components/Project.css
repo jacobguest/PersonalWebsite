@@ -8,18 +8,38 @@
     border: 3px solid #000;
     padding: 3px;
     margin-top: 10%;
+    /* Overwrite webkit link css */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
+.project-card:Hover{
+    transform: scale(1.01);
+}
+
+
 .project-title {
+    /* place the overlay just over the bottom of the image */
+    position: relative;
+    bottom: 15%;
+    background-color: rgb(0, 0, 0, 0.7);
+    /* overlay is 15% the size of the total image */
     height: 15%;
     width: 100%;
     text-align: center;
-    background-color: blue;
+    
+   
 }
 
 .project-thumb {
-    height: 85%;
+    height: 100%;
     width: 100%;
-    text-align: center;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-thumb img {
+    object-fit: cover;
+    min-width: 100%
 }
