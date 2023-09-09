@@ -1,0 +1,16 @@
+.project-card {
+    height: 20vh;
+    width: 80%;
+}
+
+.project-title {
+    height: 15%;
+    width: 100%;
+    background-color: blue;
+}
+
+.project-thumb {
+    height: 85%;
+    width: 100%;
+    background-color: red;
+}

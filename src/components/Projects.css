@@ -1,0 +1,13 @@
+.grid-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+.gridCol {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
