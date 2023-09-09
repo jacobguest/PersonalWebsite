@@ -1,9 +1,10 @@
 .project-card {
-    height: 25%;
-    width: 80%;
+    height: 25vh;
+    width: 70%;
     border-radius: 10px;
     border: 3px solid #000;
     padding: 3px;
+    margin-top: 10%;
 }
 
 .project-title {

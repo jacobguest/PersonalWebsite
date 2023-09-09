@@ -46,13 +46,22 @@ const Projects = () => {
             <Project />
             <Project />
             <Project />
-          </div>
-          <div className="gridColTriple">
             <Project />
             <Project />
             <Project />
           </div>
           <div className="gridColTriple">
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+          </div>
+          <div className="gridColTriple">
+            <Project />
+            <Project />
+            <Project />
             <Project />
             <Project />
             <Project />
