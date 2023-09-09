@@ -1,10 +1,10 @@
 import './Project.css';
 
-const Project = () => {
+const Project = (props) => {
     return (
         <div className="project-card">
             <div className="project-thumb">box</div>
-            <div className="project-title">Title</div>
+            <div className="project-title">{props.project.title}</div>
         </div>
     );
 };

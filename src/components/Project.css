@@ -1,7 +1,10 @@
 .project-card {
+    /* Height is 25% of viewing window - about 3 cards vertically on show no matter the layout*/
     height: 25vh;
+    /* Card takes up 70% of its column container */
     width: 70%;
-    border-radius: 10px;
+    /* Create curved corners for project card */
+    border-radius: 10px; 
     border: 3px solid #000;
     padding: 3px;
     margin-top: 10%;
