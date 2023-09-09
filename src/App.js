@@ -17,7 +17,6 @@ function App() {
           <Route exact path="/" index element={<Home />} />
           <Route exact path="/projects" element={<ProjectsPage />} />
           <Route exact path="/projects/photography" element={<Photography/>}/>
-          
         </Routes>
       </div>
     </div>

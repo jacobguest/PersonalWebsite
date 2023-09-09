@@ -9,11 +9,11 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: 'Photography Portfolio',
-      image: 'photography.jpeg',
+      image: 'project-photography.png',
     },
     {
       title: 'Wordle in Java',
-      image: 'wordle.jpg',
+      image: 'wordle.png',
     },
   ];
 
