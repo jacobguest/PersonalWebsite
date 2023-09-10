@@ -4,28 +4,44 @@ import "./ProjectsPage.css";
 import { useMediaQuery } from "react-responsive";
 
 const ProjectsPage = () => {
-
   // create object to store title, and image of each project
+  // should put this in another file somehow (json file maybe)
   const projects = [
     {
-      title: 'Photography Portfolio',
-      image: 'project-photography.png',
+      title: "Photography Portfolio",
+      image: "project-photography.png",
     },
     {
-      title: 'Sports Centre Booking System',
-      image: 'swproject.png',
+      title: "Sports Centre Booking System",
+      image: "yellow.png",
     },
     {
-      title: 'Wordle in Java',
-      image: 'wordle.png',
+      title: "Network Programming",
+      image: "blue.png",
     },
     {
-      title: 'Wordle in Java',
-      image: 'wordle.png',
+      title: "PGM Tools",
+      image: "dpink.png",
     },
     {
-      title: 'Wordle in Java',
-      image: 'wordle.png',
+      title: "Web Tech",
+      image: "dpurple.png",
+    },
+    {
+      title: "AI 1",
+      image: "green.png",
+    },
+    {
+      title: "AI 2",
+      image: "lpink.png",
+    },
+    {
+      title: "Data Mining",
+      image: "lpurple.png",
+    },
+    {
+      title: "User Interfaces Qt",
+      image: "orange.png",
     },
   ];
 
@@ -33,65 +49,49 @@ const ProjectsPage = () => {
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
+  const projectGroupsTriple = [];
+  for (let i = 0; i < 9; i += 3) {
+    const projectGroupTriple = projects
+      .slice(i, i + 3)
+      .map((project, index) => <Project key={index} project={project} />);
+    projectGroupsTriple.push(
+      <div key={i} className="gridColTriple">
+        {projectGroupTriple}
+      </div>
+    );
+  }
+
+  const projectGroupsDouble = [];
+  for (let i = 0; i < 8; i += 4) {
+    const projectGroupDouble = projects
+      .slice(i, i + 4)
+      .map((project, index) => <Project key={index} project={project} />);
+    projectGroupsDouble.push(
+      <div key={i} className="gridColDouble">
+        {projectGroupDouble}
+      </div>
+    );
+  }
+
+  const projectGroupsSingle = [];
+  projectGroupsSingle.push(
+    <div className="gridColSingle">
+      {projects.map((project, index) => (
+        <Project project={project} />
+      ))}
+    </div>
+  );
+
   return (
     <div className="grid-container">
       {isMobile && (
-        <div style={{ display: "flex", height: "100%", width: "100%" }}>
-          <div className="gridColSingle">
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-          </div>
-        </div>
+        <div className="gridCol-container">{projectGroupsSingle}</div>
       )}
       {isTablet && (
-        <div style={{ display: "flex", height: "100%", width: "100%" }}>
-          <div className="gridColDouble">
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-          </div>
-          <div className="gridColDouble">
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-          </div>
-        </div>
+        <div className="gridCol-container">{projectGroupsDouble}</div>
       )}
       {isDesktop && (
-        <div style={{ display: "flex", height: "100%", width: "100%" }}>
-          <div className="gridColTriple">
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-          </div>
-          <div className="gridColTriple">
-          <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-          </div>
-          <div className="gridColTriple">
-          <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-            <Project project={projects[0]}/>
-          </div>
-        </div>
+        <div className="gridCol-container">{projectGroupsTriple}</div>
       )}
     </div>
   );
