@@ -19,16 +19,18 @@
 
 
 .project-title {
-    /* place the overlay just over the bottom of the image */
+    /* Place the overlay just over the bottom of the image */
     position: relative;
     bottom: 15%;
     background-color: rgb(0, 0, 0, 0.7);
-    /* overlay is 15% the size of the total image */
+    /* Overlay is 15% the size of the total image */
     height: 15%;
     width: 100%;
-    text-align: center;
-    
-   
+
+    /* Center the text in the div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-thumb {

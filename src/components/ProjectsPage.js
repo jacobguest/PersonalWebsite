@@ -12,6 +12,18 @@ const ProjectsPage = () => {
       image: 'project-photography.png',
     },
     {
+      title: 'Sports Centre Booking System',
+      image: 'swproject.png',
+    },
+    {
+      title: 'Wordle in Java',
+      image: 'wordle.png',
+    },
+    {
+      title: 'Wordle in Java',
+      image: 'wordle.png',
+    },
+    {
       title: 'Wordle in Java',
       image: 'wordle.png',
     },
