@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 const Navbar = () => {
 
-  const logoUrl = "../public/logo2.png";
+  const logoUrl = "/logo2.png";
+  
   return (
     <div className={styles.navbar}> 
       <Link href="/" className={styles['navbar-item-left']} ><img alt="JG logo" className={styles.logo} src={logoUrl}/></Link>
