@@ -2,7 +2,6 @@
 /* main area. height is whole viewport and width is whole width */
 .app {
     width: 100%;
-    background-color: rgb(187, 135, 255);
     background-image: url('../public/background2.jpg');
     background-size: cover;
 }

@@ -1,20 +1,65 @@
 [
     {
-      "title": "Project 1",
-      "imageUrl": "https://example.com/project1.jpg",
-      "techUsed": ["React", "Node.js", "MongoDB"],
-      "description": "This is the description of Project 1."
+      "title": "Photography Portfolio",
+      "imageUrl": "project-photography.png",
+      "techUsed": "React, AWS Amplify, Amazon S3",
+      "description": "This project was a portfolio website designed to showcase the artists favourite photographs",
+      "id": "photography"
+    },
+    { 
+      "title": "Sports Centre Booking System",
+      "imageUrl": "yellow.png",
+      "techUsed": ["React, Express, Node, MongoDB"],
+      "description": "This is the description of Project 2.",
+      "id": "sportscentre"
     },
     {
-      "title": "Project 2",
-      "imageUrl": "https://example.com/project2.jpg",
-      "techUsed": ["Angular", "Express.js", "MySQL"],
-      "description": "This is the description of Project 2."
+      "title": "Networks: Auction System",
+      "imageUrl": "blue.png",
+      "techUsed": ["Java, TCP Protocol"],
+      "description": "This is the description of Project 3.",
+      "id": "networks"
     },
     {
-      "title": "Project 3",
-      "imageUrl": "https://example.com/project3.jpg",
+      "title": "PGM Tools",
+      "imageUrl": "dpink.png",
+      "techUsed": ["C"],
+      "description": "This is the description of Project 3.",
+      "id": "pgm"
+    },
+    {
+      "title": "Web Tech Website",
+      "imageUrl": "dpurple.png",
+      "techUsed": ["Flask, Python"],
+      "description": "This is the description of Project 3.",
+      "id": "webtech"
+    },
+    {
+      "title": "AI 1",
+      "imageUrl": "green.png",
       "techUsed": ["Vue.js", "Django", "PostgreSQL"],
-      "description": "This is the description of Project 3."
+      "description": "This is the description of Project 3.",
+      "id": "aione"
+    },
+    {
+      "title": "AI 2",
+      "imageUrl": "lpink.png",
+      "techUsed": ["Vue.js", "Django", "PostgreSQL"],
+      "description": "This is the description of Project 3.",
+      "id": "aitwo"
+    },
+    {
+      "title": "Data Mining",
+      "imageUrl": "lpurple.png",
+      "techUsed": ["Vue.js", "Django", "PostgreSQL"],
+      "description": "This is the description of Project 3.",
+      "id": "datamining"
+    },
+    {
+      "title": "User Interfaces: Qt",
+      "imageUrl": "orange.png",
+      "techUsed": ["Qt, C++"],
+      "description": "This is the description of Project 3.",
+      "id": "userinterfacesqt"
     }
   ]

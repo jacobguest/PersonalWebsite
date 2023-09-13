@@ -1,24 +1,29 @@
-import { useRouter } from 'next/router';
-import Data from '../../public/projectData.json';
+import { useRouter } from "next/router";
+import Data from "../../public/projectData.json";
 import styles from "../../styles/AboutProject.module.css";
 
-const Proj = ({params}) => {
+const Proj = ({ params }) => {
 
-    const router = useRouter();
-    
-    
-    return (
-         <div className={styles["about-project"]}>
-      <h1>Personal Portfolio</h1>
-      <div>
-        <img />
+  const router = useRouter();
+  const project = Data.find((project) => project.id === router.query.projectId);
+  if (!project) {
+    return <div className={styles["about-project-loading"]}>Loading...</div>;
+  }
+
+  const imageUrl = "../thumbs/" + project.imageUrl;
+
+  return (
+    <div className={styles["about-project"]}>
+      <h1>{project.title}</h1>
+      <div className={styles['screenshot-container']}>
+        <img className={styles['screenshot']} src={imageUrl} />
       </div>
       <h2>About this project</h2>
-      <p>Showcase images</p>
+      <p>{project.description}</p>
       <h2>Tech used</h2>
-      <p>React, AWS Amplify, S3</p>
+      <p>{project.techUsed}</p>
     </div>
-    );
+  );
 };
 
 // export async function getStaticPaths() {
