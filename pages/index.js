@@ -1,15 +1,12 @@
-import Navbar from "../components/Navbar.js";
-// import Home from "../components/Home.js";
-// import ProjectsPage from "../components/ProjectsPage.js";
-// import Photography from '../components/Photography.js';
-import styles from "../styles/App.module.css";
-//import '../styles/globals.css';
-// import Link from 'next/link';
+import styles from '../styles/App.module.css';
 
+const checkoutButton = "Explore My Work";
 function App() {
   return (
-    <div>
-      testing 
+    <div className={styles['home-container']}>
+      <h1>Hello! I'm Jacob Guest.</h1>
+      <h2>I am a final year Computer Science student at The University of Leeds and an aspiring software engineer, passionate about technology and problem solving.</h2>
+      <div className={styles['checkout-box']}>{checkoutButton}</div>
     </div>
   );
 }
