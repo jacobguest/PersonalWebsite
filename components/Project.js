@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Project = (props) => {
 
-  
+  const url = "/projects/" + props.project.id;
   return (
     
-    <Link href="/" className={styles['project-card']}>
+    <Link href={url} className={styles['project-card']}>
       <div className={styles['project-thumb']}><img src={"thumbs/" + props.project.image} alt={'project thumbnail'}/></div>
       <div className={styles['project-title']}>{props.project.title}</div>
     </Link>

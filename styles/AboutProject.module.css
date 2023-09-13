@@ -1,0 +1,16 @@
+.about-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-project h1{
+    color:beige;
+}
+
+.about-project h2{
+    color:beige;
+}
+.about-project p{
+    color:beige;
+}
