@@ -12,38 +12,47 @@ const ProjectsPage = () => {
     {
       title: "Photography Portfolio",
       image: "project-photography.png",
+      id: "photography",
     },
     {
       title: "Sports Centre Booking System",
       image: "yellow.png",
+      id: "sportscentre",
     },
     {
       title: "Network Programming",
       image: "blue.png",
+      id: "networks",
     },
     {
       title: "PGM Tools",
       image: "dpink.png",
+      id: "pgm",
     },
     {
       title: "Web Tech",
       image: "dpurple.png",
+      id: "webtech",
     },
     {
       title: "AI 1",
       image: "green.png",
+      id: "aione",
     },
     {
       title: "AI 2",
       image: "lpink.png",
+      id: "aitwo",
     },
     {
       title: "Data Mining",
       image: "lpurple.png",
+      id: "datamining",
     },
     {
       title: "User Interfaces Qt",
       image: "orange.png",
+      id: "userinterfacesqt",
     },
   ];
 
@@ -89,11 +98,8 @@ const ProjectsPage = () => {
   );
 
   return (
-    <div className={styles2.app}>
-      <div className={styles2.navigation}>
-        <Navbar></Navbar>
-      </div>
-      <div className={styles2.content}>
+   
+      <div>
         <NoSsr>
         <div className={styles['grid-container']}>
       {isMobile && (
@@ -171,7 +177,7 @@ const ProjectsPage = () => {
            )} 
         </div> */}
       </div>
-    </div>
+    
   );
 };
 

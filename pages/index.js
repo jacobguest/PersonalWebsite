@@ -8,11 +8,8 @@ import styles from "../styles/App.module.css";
 
 function App() {
   return (
-    <div className={styles.app}>
-      <div className={styles.navigation}>
-        <Navbar></Navbar>
-      </div>
-      <div className={styles.content}></div>
+    <div>
+      testing 
     </div>
   );
 }
