@@ -4,57 +4,9 @@ import styles2 from "../styles/App.module.css";
 import Navbar from "../components/Navbar.js";
 import { useMediaQuery } from "react-responsive";
 import NoSsr from '../components/NoSsr';
+import projects from '../public/projectData.json';
 
 const ProjectsPage = () => {
-  // create object to store title, and image of each project
-  // should put this in another file somehow (json file maybe)
-  const projects = [
-    {
-      title: "Photography Portfolio",
-      image: "project-photography.png",
-      id: "photography",
-    },
-    {
-      title: "Sports Centre Booking System",
-      image: "yellow.png",
-      id: "sportscentre",
-    },
-    {
-      title: "Network Programming",
-      image: "blue.png",
-      id: "networks",
-    },
-    {
-      title: "PGM Tools",
-      image: "dpink.png",
-      id: "pgm",
-    },
-    {
-      title: "Web Tech",
-      image: "dpurple.png",
-      id: "webtech",
-    },
-    {
-      title: "AI 1",
-      image: "green.png",
-      id: "aione",
-    },
-    {
-      title: "AI 2",
-      image: "lpink.png",
-      id: "aitwo",
-    },
-    {
-      title: "Data Mining",
-      image: "lpurple.png",
-      id: "datamining",
-    },
-    {
-      title: "User Interfaces Qt",
-      image: "orange.png",
-      id: "userinterfacesqt",
-    },
-  ];
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
