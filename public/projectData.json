@@ -3,63 +3,63 @@
       "title": "Photography Portfolio",
       "imageUrl": "project-photography.png",
       "techUsed": "React, AWS Amplify, Amazon S3",
-      "description": "This project was a portfolio website designed to showcase the artists favourite photographs",
+      "description": ["Developed a dynamic and responsive photography portfolio website using React, ensuring an engaging user experience","Utilized AWS Amplify to streamline deployment, authentication, and backend services, enabling seamless project management","Integrated Amazon S3 for efficient and secure storage of high-resolution images, ensuring fast loading times and preserving image quality"],
       "id": "photography"
     },
     { 
       "title": "Sports Centre Booking System",
       "imageUrl": "yellow.png",
-      "techUsed": ["React, Express, Node, MongoDB"],
-      "description": "This is the description of Project 2.",
+      "techUsed": ["React, Express, Node, MongoDB, UML, Kanban, Agile"],
+      "description": ["Utilized a diverse set of technologies, including JavaScript, React, Node.js, Express.js, MongoDB, showcasing proficiency in a full-stack development environment","Developed both customer/employee and management interfaces to provide a seamless user experience. The customer interface allowed bookings, tracking of reservations, and viewing of upcoming activities","Successfully applied a simplified Scrum methodology, breaking the project into sprints and delivering Minimum Viable Products (MVPs) at the end of each sprint","Managed all source code using Git version control, following a feature branch workflow to ensure efficient collaboration among team members","Assumed the role of Scrum Master to organize and facilitate sprint planning, review, and status meetings, ensuring effective communication and collaboration within the team","Effectively used GitHub's issue tracker to manage tasks, assign responsibilities, and track bugs and suggestions for improvement"],
       "id": "sportscentre"
     },
     {
       "title": "Networks: Auction System",
-      "imageUrl": "blue.png",
+      "imageUrl": "networks.png",
       "techUsed": ["Java, TCP Protocol"],
-      "description": "This is the description of Project 3.",
+      "description": ["Developed a client-server application for an online auction system as a university coursework","The server application continuously runs, managing a fixed thread-pool for up to 30 connections", "Ensured clients could list items, make bids, and receive appropriate responses","Implemented logging of client requests in a specific format","Established communication between the client and server applications using sockets and TCP","Devised a custom communication protocol for interaction between the server and clients","Maintained adherence to Java coding standards, ensuring clean and well-commented code"],
       "id": "networks"
     },
     {
       "title": "PGM Tools",
-      "imageUrl": "dpink.png",
-      "techUsed": ["C"],
-      "description": "This is the description of Project 3.",
+      "imageUrl": "baboon.png",
+      "techUsed": ["C, Vim, Bash"],
+      "description": ["This project involved creating a collection of C language command-line tools for versatile PGM (Portable Gray Map) image file manipulation", "The utilities enabled tasks such as echoing files, comparing images for logical equality, and handling both ASCII and binary PGM formats", "Users could reduce image sizes, tile images into smaller parts, and reassemble them when needed", "A Bash testing script ensured reliability, and coding was predominantly done using Vim", "Aimed to provide efficient and comprehensive solutions for PGM image processing"],
       "id": "pgm"
     },
     {
       "title": "Web Tech Website",
-      "imageUrl": "dpurple.png",
-      "techUsed": ["Flask, Python"],
-      "description": "This is the description of Project 3.",
-      "id": "webtech"
+      "imageUrl": "webdev.png",
+      "techUsed": ["Flask, JavaScript, JQuery, HTML, CSS"],
+      "description": ["Created a personalized book tracking web application with user authentication and book rating features","Developed a robust three-tier architecture using Flask, ensuring a clear separation of the presentation layer, business logic, and data access layer","Utilized Jinja2 templating for rendering consistent and dynamic web pages, allowing for the efficient passing of data from Python code to HTML templates","Designed a database schema with SQLAlchemy, including tables for books, users, and an association table for the many-to-many relationship","Effectively utilized HTTP methods like 'GET' and 'POST' to facilitate client-server communication","Enhanced user experience with JavaScript, jQuery, and AJAX for real-time book rating updates"],
+      "id": "webdev"
     },
     {
-      "title": "AI 1",
-      "imageUrl": "green.png",
-      "techUsed": ["Vue.js", "Django", "PostgreSQL"],
-      "description": "This is the description of Project 3.",
+      "title": "Artifical Intelligence: Search Algorithms",
+      "imageUrl": "ai.png",
+      "techUsed": ["C++, BFS, DFS, A*, Best First"],
+      "description": ["Designed diverse tests to assess different search algorithms on the famous 8-puzzle problem","The search algorithms used included BFS, DFS, A* and Best First ","Coded custom heuristics functions to improve search algorithms","Designed a unique robot worker scenario and then applied different search algorithms to it, identifying strengths and weaknesses of each one"],
       "id": "aione"
     },
     {
-      "title": "AI 2",
-      "imageUrl": "lpink.png",
-      "techUsed": ["Vue.js", "Django", "PostgreSQL"],
-      "description": "This is the description of Project 3.",
+      "title": "Artificial Intelligence: Decision Trees",
+      "imageUrl": "ai2.png",
+      "techUsed": ["Python, Decision Trees, Pruning, P-value, Chi-squared, Datasets"],
+      "description": ["Developed Python functions to perform various tasks to do with decisions trees and datasets","Utilized 'tennis.csv' dataset to learn a decision tree to predict the value of variable 'play'","Calculated the error ratio to evaluate the decision tree's performance","Split data into training and test sets to avoid overfitting","Pruned the tree to eliminate nodes that are unneeded","Used statistical measures such as p-value and chi-squared to decide whether to continue pruning the tree"],
       "id": "aitwo"
     },
     {
       "title": "Data Mining",
-      "imageUrl": "lpurple.png",
-      "techUsed": ["Vue.js", "Django", "PostgreSQL"],
-      "description": "This is the description of Project 3.",
+      "imageUrl": "weka.png",
+      "techUsed": ["Weka, Sketch Engine"],
+      "description": ["Collaborated with a group of 4 coursemates to develop a research proposal that involved the use of data mining","Our proposal was titled: 'Detecting Social Media Posts Which Contribute to Unconscious Sexism'","Investigated different APIs to obtain our dataset such as the twitter API","Used tools such as Sketch Engine and Weka","Compared and contrasted different classifiers to determine which would be the best for our data"],
       "id": "datamining"
     },
     {
       "title": "User Interfaces: Qt",
-      "imageUrl": "orange.png",
-      "techUsed": ["Qt, C++"],
-      "description": "This is the description of Project 3.",
+      "imageUrl": "ui.png",
+      "techUsed": ["Qt, C++ "],
+      "description": ["Followed the interaction design lifecycle with 4 stages: establishing requirements, design alternatives, prototyping, and evaluating","Developed core functionalities using C++ in Qt - Volume control, play/pause, scrubber, video library scroll area","Created multiple high fidelity prototypes for both mobile and desktop","Focused on accessibility options such as brightness/contrast control, color schemes, full-screen option and tooltips"],
       "id": "userinterfacesqt"
     }
   ]
