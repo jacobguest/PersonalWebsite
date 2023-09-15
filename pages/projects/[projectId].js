@@ -19,8 +19,11 @@ const Proj = ({ params }) => {
         <img className={styles['screenshot']} src={imageUrl} />
       </div>
       <h2>About this project</h2>
-      <p>{project.description}</p>
-      <h2>Tech used</h2>
+      <ul>{project.description.map((line, index) => (
+        <li>{line}</li>
+      ))}</ul>
+      
+      <h2>Skills / Tech used</h2>
       <p>{project.techUsed}</p>
     </div>
   );
