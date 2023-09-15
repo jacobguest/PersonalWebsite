@@ -11,6 +11,7 @@
     /* Overwrite webkit link css */
     color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .project-card:Hover{
