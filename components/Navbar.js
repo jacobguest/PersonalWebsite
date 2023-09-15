@@ -7,10 +7,16 @@ const Navbar = () => {
   
   return (
     <div className={styles.navbar}> 
-      <Link href="/" className={styles['navbar-item-left']} ><img alt="JG logo" className={styles.logo} src={logoUrl}/></Link>
-      <Link className={styles['navbar-item-right']} href="/">Home</Link>
-      <Link className={styles['navbar-item-right']} href="/projectspage">Projects</Link>
-      <Link className={styles['navbar-item-right']} href="/">About</Link>
+      <div className={styles['navbar-margin']}>
+      <div className={styles['left-links']}>
+        <Link href="/" className={styles['navbar-item-left']} ><img alt="JG logo" className={styles.logo} src={logoUrl}/></Link>
+      </div>
+      <div className={styles['right-links']}>
+        <Link className={styles['navbar-item-right']} href="/">Home</Link>
+        <Link className={styles['navbar-item-right']} href="/projectspage">Projects</Link>
+        <Link className={styles['navbar-item-right']} href="/">About</Link>
+      </div>
+      </div>
     </div>
   );
 };
