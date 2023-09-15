@@ -8,7 +8,7 @@
     },
     { 
       "title": "Sports Centre Booking System",
-      "imageUrl": "yellow.png",
+      "imageUrl": "sports.png",
       "techUsed": ["React, Express, Node, MongoDB, UML, Kanban, Agile"],
       "description": ["Utilized a diverse set of technologies, including JavaScript, React, Node.js, Express.js, MongoDB, showcasing proficiency in a full-stack development environment","Developed both customer/employee and management interfaces to provide a seamless user experience. The customer interface allowed bookings, tracking of reservations, and viewing of upcoming activities","Successfully applied a simplified Scrum methodology, breaking the project into sprints and delivering Minimum Viable Products (MVPs) at the end of each sprint","Managed all source code using Git version control, following a feature branch workflow to ensure efficient collaboration among team members","Assumed the role of Scrum Master to organize and facilitate sprint planning, review, and status meetings, ensuring effective communication and collaboration within the team","Effectively used GitHub's issue tracker to manage tasks, assign responsibilities, and track bugs and suggestions for improvement"],
       "id": "sportscentre"
