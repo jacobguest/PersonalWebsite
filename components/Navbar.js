@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const logoUrl = "/logo2.png";
   
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
+  const isDesktop = useMediaQuery({ minWidth: 600 });
 
   return (
     <div className={styles.navbar}> 
