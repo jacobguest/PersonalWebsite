@@ -3,67 +3,72 @@ import styles from "../styles/ProjectsPage.module.css";
 import styles2 from "../styles/App.module.css";
 import Navbar from "../components/Navbar.js";
 import { useMediaQuery } from "react-responsive";
-import NoSsr from '../components/NoSsr';
-import projects from '../public/projectData.json';
+import NoSsr from "../components/NoSsr";
+import projects from "../public/projectData.json";
 
 const ProjectsPage = () => {
-
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+  const isNone = !(isMobile || isTablet || isDesktop)
 
-  const projectGroupsTriple = [];
-  for (let i = 0; i < 9; i += 3) {
-    const projectGroupTriple = projects
-      .slice(i, i + 3)
-      .map((project, index) => (
-        <Project key={"one" + index} project={project} />
-      ));
-    projectGroupsTriple.push(
-      <div key={i} className={styles.gridColTriple}>
-        {projectGroupTriple}
-      </div>
-    );
-  }
-
-  const projectGroupsDouble = [];
-  for (let i = 0; i < 8; i += 4) {
-    const projectGroupDouble = projects
-      .slice(i, i + 4)
-      .map((project, index) => (
-        <Project key={"two" + index} project={project} />
-      ));
-    projectGroupsDouble.push(
-      <div key={i} className={styles.gridColDouble}>
-        {projectGroupDouble}
-      </div>
-    );
-  }
-
-  const projectGroupsSingle = [];
-  projectGroupsSingle.push(
-    <div className={styles.gridColSingle}>
-      {projects.map((project, index) => (
-        <Project project={project} key={"three" + index} />
-      ))}
-    </div>
-  );
 
   return (
-   
-      <div>
-        <NoSsr>
-        <div className={styles['grid-container']}>
-      {isMobile && (
-        <div className={styles['gridCol-container']}>{projectGroupsSingle}</div>
-      )}
-      {isTablet && (
-        <div className={styles['gridCol-container']}>{projectGroupsDouble}</div>
-      )}
-      {isDesktop && (
-        <div className={styles['gridCol-container']}>{projectGroupsTriple}</div>
-      )}
-    </div></NoSsr>
+    <div>
+      <NoSsr>
+        <div className={styles["grid-container"]}>
+          {isMobile && (
+            <div className={styles["gridCol-container"]}>
+              <div className={styles.gridColSingle}>
+                <Project project={projects[0]} />
+                <Project project={projects[1]} />
+                <Project project={projects[2]} />
+                <Project project={projects[3]} />
+                <Project project={projects[4]} />
+                <Project project={projects[5]} />
+                <Project project={projects[6]} />
+                <Project project={projects[7]} />
+                <Project project={projects[8]} />
+              </div>
+            </div>
+          )}
+          {(isTablet || isNone) && (
+            <div className={styles["gridCol-container"]}>
+              <div className={styles.gridColDouble}>
+                <Project project={projects[0]} />
+                <Project project={projects[1]} />
+                <Project project={projects[2]} />
+                <Project project={projects[3]} />
+              </div>
+              <div className={styles.gridColDouble}>
+                <Project project={projects[4]} />
+                <Project project={projects[5]} />
+                <Project project={projects[6]} />
+                <Project project={projects[7]} />
+              </div>
+            </div>
+          )}
+          {isDesktop && (
+            <div className={styles["gridCol-container"]}>
+              <div className={styles.gridColTriple}>
+                <Project project={projects[0]} />
+                <Project project={projects[1]} />
+                <Project project={projects[2]} />
+              </div>
+              <div className={styles.gridColTriple}>
+                <Project project={projects[3]} />
+                <Project project={projects[4]} />
+                <Project project={projects[5]} />
+              </div>
+              <div className={styles.gridColTriple}>
+                <Project project={projects[6]} />
+                <Project project={projects[7]} />
+                <Project project={projects[8]} />
+              </div>
+            </div>
+          )}
+        </div>
+      </NoSsr>
       {/* <div className={styles['grid-container']}>
           <div className={styles['mobile-layout']}>
             <div className={styles['gridCol-container-mob']}>{projectGroupsSingle}</div>
@@ -76,7 +81,7 @@ const ProjectsPage = () => {
           </div>
       </div> */}
 
-        {/* <div className={styles["grid-container"]}>
+      {/* <div className={styles["grid-container"]}>
           { {isMobile && (
             <div className={styles["gridCol-container"]}>
               <Project project={projects[0]} />
@@ -128,8 +133,7 @@ const ProjectsPage = () => {
             </div>
            )} 
         </div> */}
-      </div>
-    
+    </div>
   );
 };
 
