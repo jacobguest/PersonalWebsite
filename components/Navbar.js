@@ -18,14 +18,14 @@ const Navbar = () => {
         <div className={styles['right-links-desktop']}>
           <Link className={styles['navbar-item-right']} href="/">Home</Link>
           <Link className={styles['navbar-item-right']} href="/projectspage">Projects</Link>
-          <Link className={styles['navbar-item-right']} href="/">About</Link>
+          <Link className={styles['navbar-item-right']} href="/about">About</Link>
         </div>
       </div>
       <div className={isDesktop ? styles['hide-desktop'] : styles['show-desktop']}>
         <div className={styles['right-links-mobile']}>
           <Link className={styles['navbar-item-right']} href="/">Home</Link>
           <Link className={styles['navbar-item-right']} href="/projectspage">Projects</Link>
-          <Link className={styles['navbar-item-right']} href="/">About</Link>
+          <Link className={styles['navbar-item-right']} href="/about">About</Link>
         </div>
       </div>
       </div>
