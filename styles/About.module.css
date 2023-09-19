@@ -5,19 +5,11 @@
     flex-direction: column;
 }
 
-.about-container h1 {
-    color: white;
-}
-
-.about-container p {
+.about-container h1, .about-container h2, .about-container p, .about-container table{
     color: white;
     margin-right: 20%;
     margin-left: 20%;
-}
-.about-container table {
-    color: white;
-    margin-right: 20%;
-    margin-left: 20%;
+    text-align: center;
 }
 
 .about-container table {
